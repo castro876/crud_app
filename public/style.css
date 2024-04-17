@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.container label{
+   color: black;
+}
+
+.container fieldset{
+    width: 80%;
+    margin: auto;
+    background-color: gold;
+    color: white;
+}
+
+input{
+   outline: none;
+}
+
+button{
+    background-color: green;
+    color: black;
+    cursor: pointer;
+    transition: background-color 2s;
+    transition: border 2s;
+    border: solid green;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: orange;
+    border: solid orange;
+}
+
+h1{text-align: center;}
+
+                                 /*Table style*/
+.T-container{
+   width: 100%;
+   text-align: center;
+   display: inline;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-width:;
+    margin-top: 50px;
+}
+
+th{
+    background-color: black;
+    color: bisque;
+    border: solid black;
+    height: 40px;
+}
+
+td{
+    background-color: gold;
+}
+
+.icon-container{
+   position: absolute;
+   left: 111px;
+   top: 70px;
+   font-size: 40px;
+}
+
+.fa-plus-square{
+    cursor: pointer;
+    color:green;
+ }
+
+.fa-trash-o{
+   cursor: pointer;
+   color: brown;
+}
+
+.fa-pencil-square-o{
+    cursor: pointer;
+    color: green;
+ }
+
+tr td a{
+    color:green;
+}
+
+.login_para{
+    margin-left: 15px;
+}
+
+.login_error{
+    margin-left: 15px;
+    color: red;
+}
+
+#btn-con{
+    float:right;
+    margin: -10px 20px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

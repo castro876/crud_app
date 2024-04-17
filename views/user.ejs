@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users profile || Page 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Users Profile | Admin</h1>
+    <div class="T-container">
+     
+      <div class="icon-container">
+           <a href="/add_user"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+        </div>
+     <table>
+        <tr>
+            <th>Username</th>
+            <th>Usermail</th>
+            <th>Userpassword</th>
+            <th> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+            <th><i class="fa fa-trash-o" aria-hidden="true"></i></th>
+        </tr>
+        <% if( typeof(userData) !=="undefined") { %>  <!--fix undefine variable error-->
+          <% userData.forEach( (itemInArr) => {%>
+        <tr> 
+         <!--<a href="http://127.0.01/get_user/<%- itemInArr._id%>">--> 
+            <td><%- itemInArr.name%></td>
+            <td><%- itemInArr.email%></td>
+            <td><%- itemInArr.password%></td>
+            <td><a href="/get_user/edit/<%- itemInArr._id%>">Edit</a></td>
+            <td><a href="/get_user?uid=<%- itemInArr._id%>">Delete</a></td>
+          </a>
+        </tr>
+
+        <% } )%>
+        <% } %>
+     </table>
+    </div>
+</body>
+</html>
